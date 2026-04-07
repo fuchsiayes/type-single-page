@@ -6,7 +6,7 @@
     }
     
     body{
-    background-color: rgb(237, 219, 225);
+    background-color: rgb(222, 219, 237);
     font-family: 'Nunito';
 }
 /* how the page wrapper will appear on mobile */
@@ -30,7 +30,7 @@ grid-template-areas:
 
 #history {
 grid-area: h;
-background-color: coral;
+background-color: rgb(130, 80, 255);
 }
 
 #variations{
@@ -43,13 +43,13 @@ grid-area: a;
 }
 /* CSS for the footer */
 footer{
-    background-color: rgb(138, 21, 21);
+    background-color: rgb(58, 47, 76);
     height:200px;
 }
 
 /* font styling area */
 h2{
-    color: firebrick;
+    color: rgb(84, 34, 178);
     font-variation-settings: "opsz" 16, "wght" 900, "slnt" -8;
 }
 
@@ -75,9 +75,9 @@ h3{
 }
 @keyframes wonkVariations {
     0%, 100%{
-        font-variation-settings: "opsz" 16, "wght" 200, "slnt" 0;
+        font-variation-settings: "opsz" 12, "wght" 200, "wdth" 125;
     }
-    50%{font-variation-settings: "opsz" 16, "wght" 900, "slnt" 0;
+    50%{font-variation-settings: "opsz" 12, "wght" 200, "wdth" 0;
     }
 }
 /* where the animation is for the width change */
@@ -86,12 +86,21 @@ h3{
 }
 @keyframes widthVariations {
     0%, 100%{
-        font-variation-settings: "opsz" 16, "wght" 200, "slnt" 0;
+        font-variation-settings: "opsz" 12, "wght" 0, "wdth" 75;
     }
-    50%{font-variation-settings: "opsz" 16, "wght" 900, "slnt" 0;
+    50%{font-variation-settings: "opsz" 12, "wght" 900, "wdth" 75;
     }
 }
-
+.opsz{
+    animation: opszVariations 5s infinite;
+}
+@keyframes opszVariations {
+    0%, 100%{
+        font-variation-settings: "opsz" 12, "wght" 900, "wdth" 75;
+    }
+    50%{font-variation-settings: "opsz" 0, "wght" 900, "wdth" 75;
+    }
+}
 h5{
     font-size:40px;
     color:blue;
