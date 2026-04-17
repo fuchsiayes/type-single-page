@@ -20,12 +20,14 @@
 @media only screen and (min-width:800px){
 .page-wrapper{
 display: grid;
+width: 100%;
 grid-gap: 25px;
 grid-template-columns: 1fr 1fr;
 grid-template-rows: auto;
 grid-template-areas: 
-    "h v"
-    "h a";
+    "h h"
+    "v v"
+    "a a";
 }
 
 #history {
@@ -44,19 +46,21 @@ grid-area: a;
 /* CSS for the footer */
 footer{
     background-color: rgb(58, 47, 76);
-    height:200px;
+    height:30px;
+    color: azure;
 }
 
 /* font styling area */
 h2{
-    color: rgb(84, 34, 178);
+    color: rgb(231, 225, 243);
     font-variation-settings: "opsz" 16, "wght" 900, "slnt" -8;
 }
 
 h3{
     font-weight:20; 
     text-align: center;
-    font-size: 5em;
+    font-size: 8em;
+    width: 1000px;
     animation: weightChange 7s infinite;
 }
 
