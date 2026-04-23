@@ -6,7 +6,7 @@
     }
     
     body{
-    background-color: rgb(222, 219, 237);
+    background-color: rgb(255, 255, 255);
     font-family: 'Nunito';
 }
 /* how the page wrapper will appear on mobile */
@@ -25,14 +25,14 @@ grid-gap: 25px;
 grid-template-columns: 1fr 1fr;
 grid-template-rows: auto;
 grid-template-areas: 
-    "h h"
-    "v v"
-    "a a";
+    "h h h h"
+    "v v v v"
+    "a a a a";
 }
 
 #history {
 grid-area: h;
-background-color: rgb(130, 80, 255);
+background-color: rgb(0, 0, 0);
 }
 
 #variations{
@@ -45,15 +45,25 @@ grid-area: a;
 }
 /* CSS for the footer */
 footer{
-    background-color: rgb(58, 47, 76);
+    background-color: rgb(0, 0, 0);
     height:30px;
     color: azure;
 }
 
 /* font styling area */
+h1{
+    font-weight:20; 
+    text-align: center;
+    font-size: 20px;
+    width: 1000px;
+    font-variation-settings: "opsz" 0, "wght" 1000;
+    transform: translate(260px,0);
+}
 h2{
-    color: rgb(231, 225, 243);
-    font-variation-settings: "opsz" 16, "wght" 900, "slnt" -8;
+    color: rgb(0, 0, 0);
+    font-variation-settings: "opsz" 0, "wght" 1000 ;
+    font-size: 30px ;
+    text-align: center
 }
 
 h3{
@@ -62,6 +72,17 @@ h3{
     font-size: 8em;
     width: 1000px;
     animation: weightChange 7s infinite;
+    transform: translate(260px,100px);
+}
+h4{
+    color: rgb(255, 255, 255);
+    font-variation-settings: "opsz" 0, "wght" 1000 ;
+    font-size: 30px ;
+    text-align: center;
+}
+p{
+    color:rgb(255, 255, 255);
+    text-align: center;
 }
 
 
@@ -79,9 +100,9 @@ h3{
 }
 @keyframes wonkVariations {
     0%, 100%{
-        font-variation-settings: "opsz" 12, "wght" 200, "wdth" 125;
+        font-variation-settings: "opsz" 12, "wght" 450, "wdth" 75;
     }
-    50%{font-variation-settings: "opsz" 12, "wght" 200, "wdth" 0;
+    50%{font-variation-settings: "opsz" 12, "wght" 900, "wdth" 75;
     }
 }
 /* where the animation is for the width change */
@@ -90,9 +111,9 @@ h3{
 }
 @keyframes widthVariations {
     0%, 100%{
-        font-variation-settings: "opsz" 12, "wght" 0, "wdth" 75;
+        font-variation-settings: "opsz" 12, "wght" 200, "wdth" 125;
     }
-    50%{font-variation-settings: "opsz" 12, "wght" 900, "wdth" 75;
+    50%{font-variation-settings: "opsz" 12, "wght" 200, "wdth" 75;
     }
 }
 .opsz{
@@ -102,13 +123,18 @@ h3{
     0%, 100%{
         font-variation-settings: "opsz" 12, "wght" 900, "wdth" 75;
     }
-    50%{font-variation-settings: "opsz" 0, "wght" 900, "wdth" 75;
+    50%{font-variation-settings: "opsz" 6, "wght" 900, "wdth" 75;
     }
 }
 h5{
-    font-size:40px;
-    color:blue;
-    margin:15px;
+    font-size:90px;
+    color:rgb(81, 0, 255);
+    margin:0px;
+    background-color: black;
+    text-align: center;
+}
+p2{
+    transform: scale(100%);
 }
 
 /* variable font that changes on hover */

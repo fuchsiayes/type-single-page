@@ -55,7 +55,8 @@
   }
   /* where to change the color of the font in the nav bar */
   nav a {
-      color: rgb(163, 144, 144);
+      color: 
+      rgb(62, 43, 97);
       text-decoration: none;
       font-size: 1.2rem;
       text-transform: lowercase;
@@ -91,7 +92,7 @@
   
           display: block;
           /* color of the hamburger menu */
-          background: rgb(170, 140, 140);
+          background: rgb(255, 201, 251);
           /* how far the hamburger menu is from the top */
           margin-top:7px;
           height: 3px;
